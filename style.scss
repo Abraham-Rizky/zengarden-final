@@ -90,22 +90,6 @@ header h2{
     }
 }
 
-//This is not working yet for the dragon picture --TODO
-#zen-supporting:before{
-    grid-column: 1/2;
-    background: url(/assets/Dragon.svg) center no-repeat;
-    // content: '';
-    // display: inline-block;
-    // // float: left;
-    // height: 900px;
-    // // left: 55%;
-    // // margin: -350px 0 0 -1050px;
-    // max-width: 495px;
-    // min-width: 312px;
-    // position: relative;
-    // width: 100%;
-}
-
 aside{
     color: $color-5;
     height: 1250px;
@@ -126,6 +110,12 @@ aside{
         background-image: linear-gradient(to right, #530b0e 0%, #8f1719 51%, #530b0e 100%)
 
     }
+}
+
+aside h3{
+    font-size: 1.5em;
+    font-family: $secondary-font;
+    color: $color-1;
 }
 
 aside > .wrapper{
@@ -160,6 +150,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 15px;
+    position: relative;
 }
 footer a{
     padding: 3% 5%;
@@ -177,9 +168,20 @@ footer a{
     background-image: linear-gradient(to bottom, #530b0e 0%, #8f1719 51%, #530b0e 100%)
 }
 
-#zen-requirements{
-    background: url(/assets/dragon-egg-2.svg) no-repeat center;
-    background-size: contain;
-    background-size: 500px 400px;
-
+footer::after{
+    padding: 0;
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw; /* full page width */
+    background: url(/assets/animation-box.svg) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    left: calc(-50vw + 50%); /* left positioning */
+    bottom: -100px;
+    clear: both;
+        @include MQ(M){
+        left: calc(-42vw + 50%); /* left positioning */
+    }
 }
+
