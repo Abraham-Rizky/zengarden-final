@@ -29,7 +29,7 @@
 }
 
 header{
-    background-image: url(/assets/toppng.com-medieval-dragon-banner-285x541.png);
+    background-image: url(../assets/toppng.com-medieval-dragon-banner-285x541.png);
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
@@ -174,7 +174,7 @@ footer::after{
     position: absolute;
     height: 100vh;
     width: 100vw; /* full page width */
-    background: url(/assets/animation-box.svg) no-repeat center;
+    background: url(../assets/animation-box.svg) no-repeat center;
     background-size: cover;
     z-index: -1;
     left: calc(-50vw + 50%); /* left positioning */
