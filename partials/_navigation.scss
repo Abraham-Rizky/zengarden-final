@@ -11,17 +11,20 @@ xNavigation
 
 
 nav[role=navigation] a, #zen-resources li a{
+  color: $color-1;
   text-decoration: none;
-  color: #fff;
   font-size: 1.25em;
   transition: 0.5s;
   &:hover{
     color: $color-4;
   }
+  @include MQ(M){
+    color: #fff;
+  }
 }
 
 nav[role=navigation] li{
-  padding: 1% 0;
+  padding: 1% 1%;
   @include flex-container(column);
 }
 
