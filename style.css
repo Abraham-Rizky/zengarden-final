@@ -89,7 +89,7 @@ p {
   font-family: "Goudy Bookletter 1911", serif;
   font-size: 1.4rem;
   line-height: 1.4;
-  color: #774b34; }
+  color: #944111; }
   p a {
     color: #ad8a56;
     text-decoration: underline; }
@@ -113,7 +113,7 @@ xNavigation
 
 -------------------------------- */
 nav[role=navigation] a, #zen-resources li a {
-  color: #1e130d;
+  color: #220f04;
   text-decoration: none;
   font-size: 1.25em;
   transition: 0.5s; }
@@ -193,7 +193,7 @@ p {
   font-family: "Goudy Bookletter 1911", serif;
   font-size: 1.4rem;
   line-height: 1.4;
-  color: #774b34; }
+  color: #944111; }
   p a {
     color: #ad8a56;
     text-decoration: underline; }
@@ -423,7 +423,7 @@ aside::after {
 aside h3 {
   font-size: 1.5em;
   font-family: "UnifrakturCook", cursive;
-  color: #1e130d; }
+  color: #220f04; }
 
 aside > .wrapper {
   text-align: right;
