@@ -213,8 +213,15 @@ header h2 {
 #zen-participation,
 #zen-benefits,
 #zen-requirements {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 50px;
-    width: 90%;
+
+    @include MQ(M){
+        margin: 0;
+        margin-bottom: 50px;
+    }
 }
 
 #zen-preamble>h3,
@@ -402,6 +409,7 @@ footer {
     width: 90vw;
     box-sizing: border-box;
     padding: 0 4%;
+    padding-top: 65%;
 }
 
 footer a {
@@ -418,14 +426,14 @@ footer a {
     border-radius: 5px;
     text-decoration: none;
     background-image: linear-gradient(to bottom, #530b0e 0%, #8f1719 51%, #530b0e 100%);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 footer::after {
     content: "";
     position: absolute;
-    bottom: -25px;
-    height: 100vh;
+    top: -85%;
+    height: 100%;
     width: 90vw;
     background: url(./assets/animation-box.svg) no-repeat;
     background-size: 100% 100%;
@@ -434,6 +442,7 @@ footer::after {
     z-index: -1;
     // left: calc(-50vw + 50%); /* left positioning */
     clear: both;
+    margin-top: 50%;
 
     @include MQ(M) {
         // left: calc(-42vw + 50%); /* left positioning */
