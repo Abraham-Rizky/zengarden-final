@@ -10,31 +10,56 @@ xNavigation
 -------------------------------- */
 
 
-nav[role=navigation] a, #zen-resources li a{
+nav[role=navigation] a,
+#zen-resources li a {
   color: $color-1;
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1.1rem;
   transition: 0.5s;
-  &:hover{
+
+  &:hover {
     color: $color-4;
   }
-  @include MQ(M){
+
+  @include MQ(M) {
     color: #fff;
   }
 }
 
-nav[role=navigation] li{
-  padding: 1% 1%;
-  @include flex-container(column);
+nav[role=navigation] li {
+  @include flex-container(row);
+
+  @include MQ(M) {
+    padding: 5% 1%;
+    @include flex-container(column);
+  }
 }
 
-nav[role=navigation] ul{
+nav[role=navigation] ul {
   width: 80vw;
   @include flex-container(row);
   flex-wrap: wrap;
   justify-content: space-between;
-    @include MQ(M){
+
+  @include MQ(M) {
     @include flex-container(column);
     width: 100%;
   }
+}
+
+nav[role=navigation] a {
+  margin: 0 8px;
+
+  @include MQ(M) {
+    width: 100%;
+  }
+}
+
+nav[role=navigation] a:nth-child(2) {
+  font-weight: bold;
+  color: $color-3;
+}
+
+nav[role=navigation] a:nth-child(1) {
+  font-style: italic;
 }

@@ -124,7 +124,7 @@ nav[role=navigation] {
 }
 
 header {
-  font-size: 2em;
+  font-size: 1.5rem;
 }
 
 aside {
@@ -136,30 +136,44 @@ aside {
 xNavigation 
 
 -------------------------------- */
-nav[role=navigation] a, #zen-resources li a {
+nav[role=navigation] a,
+#zen-resources li a {
   color: #220f04;
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1.1rem;
   transition: 0.5s;
 }
-nav[role=navigation] a:hover, #zen-resources li a:hover {
+nav[role=navigation] a:hover,
+#zen-resources li a:hover {
   color: #837c49;
 }
 @media only screen and (min-width: 1024px) {
-  nav[role=navigation] a, #zen-resources li a {
+  nav[role=navigation] a,
+#zen-resources li a {
     color: #fff;
   }
 }
 
 nav[role=navigation] li {
-  padding: 1% 1%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+@media only screen and (min-width: 1024px) {
+  nav[role=navigation] li {
+    padding: 5% 1%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
 }
 
 nav[role=navigation] ul {
@@ -185,6 +199,24 @@ nav[role=navigation] ul {
     flex-flow: column nowrap;
     width: 100%;
   }
+}
+
+nav[role=navigation] a {
+  margin: 0 8px;
+}
+@media only screen and (min-width: 1024px) {
+  nav[role=navigation] a {
+    width: 100%;
+  }
+}
+
+nav[role=navigation] a:nth-child(2) {
+  font-weight: bold;
+  color: #ad8a56;
+}
+
+nav[role=navigation] a:nth-child(1) {
+  font-style: italic;
 }
 
 /* -------------------------------- 
@@ -253,7 +285,7 @@ nav[role=navigation] {
 }
 
 header {
-  font-size: 2em;
+  font-size: 1.5rem;
 }
 
 aside {
@@ -498,10 +530,10 @@ aside::after {
   position: absolute;
   opacity: 1;
   z-index: -1;
-  left: 5%;
+  right: 5%;
   bottom: 3%;
-  height: 200px;
-  width: 200px;
+  height: 125px;
+  width: 125px;
   border: 5px solid #111;
   border-radius: 50% 50% 50% 50%/12% 12% 88% 88%;
   background-image: linear-gradient(transparent 35%, #A00608 35%, #A00608 45%, transparent 45%), linear-gradient(90deg, transparent 45%, #A00608 45%, #A00608 55%, transparent 55%), linear-gradient(135deg, #dedede, #ffffff 16%, #dedede 21%, #ffffff 24%, #dedede 36%, #ffffff 45%, #ffffff 60%, #dedede 72%, #ffffff 80%, #dedede 84%, #a1a1a1);
@@ -527,7 +559,7 @@ aside h3 {
 }
 
 aside > .wrapper {
-  text-align: right;
+  text-align: left;
   width: 90%;
   padding: 0 2%;
 }
@@ -535,6 +567,7 @@ aside > .wrapper {
   aside > .wrapper {
     width: 100%;
     padding: 0;
+    text-align: right;
   }
 }
 
@@ -560,6 +593,11 @@ aside li {
 
 #design-archives {
   margin-bottom: 25px;
+}
+
+#design-archives h3,
+#zen-resources h3 {
+  margin-bottom: 5px;
 }
 
 footer {
