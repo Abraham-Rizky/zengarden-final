@@ -52,6 +52,7 @@ nav[role=navigation] a {
 
   @include MQ(M) {
     width: 100%;
+    margin: 5px 10px;
   }
 }
 
@@ -62,4 +63,7 @@ nav[role=navigation] a:nth-child(2) {
 
 nav[role=navigation] a:nth-child(1) {
   font-style: italic;
+  @include MQ(M){
+    font-size: 1.25rem;
+  }
 }
