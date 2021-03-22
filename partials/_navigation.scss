@@ -28,6 +28,7 @@ nav[role=navigation] a,
 
 nav[role=navigation] li {
   @include flex-container(row);
+  width: 100%;
 
   @include MQ(M) {
     padding: 5% 1%;
@@ -63,7 +64,8 @@ nav[role=navigation] a:nth-child(2) {
 
 nav[role=navigation] a:nth-child(1) {
   font-style: italic;
-  @include MQ(M){
+
+  @include MQ(M) {
     font-size: 1.25rem;
   }
 }

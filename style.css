@@ -162,6 +162,7 @@ nav[role=navigation] li {
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
+  width: 100%;
 }
 @media only screen and (min-width: 1024px) {
   nav[role=navigation] li {
